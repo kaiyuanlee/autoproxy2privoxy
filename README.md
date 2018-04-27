@@ -34,7 +34,7 @@ The following example assumes a Linux environment. Also the famous gfwlist is
 used as the autoproxy ruleset input in the example below.
 
     gfwlist=https://gitlab.com/gfwlist/gfwlist/raw/master/gfwlist.txt
-    wget -qO- "${gfwlist}" | base64 -d > gfwlist.txt
+    wget -qO- "${gfwlist}" | base64 -D > gfwlist.txt
     export PROXY_ADDR=127.0.0.1:1080 PROXY_TYPE=SOCKS5
     chmod +x autoproxy2privoxy
     ./autoproxy2privoxy gfwlist.txt > gfw.action
