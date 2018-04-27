@@ -54,11 +54,11 @@ First, make sure the address and type of the target proxy is set correctly in
 
 Then issue the following commands as root:
 
-    cp gfw.action /etc/privoxy/
-    chown privoxy:privoxy /etc/privoxy/gfw.action
-    chmod 660 /etc/privoxy/gfw.action
+    cp gfw.action /usr/local/etc/privoxy/
+    chown privoxy:privoxy /usr/local/etc/privoxy/gfw.action
+    chmod 660 /usr/local/etc/privoxy/gfw.action
 
-Now edit `/etc/privoxy/config`, adding this line:
+Now edit `/usr/local/etc/privoxy/config`, adding this line:
 
     actionsfile gfw.action
 
